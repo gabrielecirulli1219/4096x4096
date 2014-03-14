@@ -1,7 +1,7 @@
 # 2048*2048
 Clone of [2048](http://gabrielecirulli.github.io/2048/) by Gabriele Cirull.
 
-Made just for fun to continue. 2048 is good but sometimes you reach 2048 to soon. [Play it here!](http://gabrielecirulli.github.io/2048x2048/)
+Made just for fun to continue. 2048 is good but sometimes you reach 2048 to soon. [Play it here!](http://msiq.github.io/2048x2048/)
 
 ### Contributions
 I am keeping original contributions here...
