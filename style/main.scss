@@ -1,9 +1,9 @@
 @import "helpers";
 @import "fonts/clear-sans.css";
 
-$field-width: 500px;
-$grid-spacing: 15px;
-$grid-row-cells: 4;
+$field-width: 720px;
+$grid-spacing: 10px;
+$grid-row-cells: 6;
 $tile-size: ($field-width - $grid-spacing * ($grid-row-cells + 1)) / $grid-row-cells;
 $tile-border-radius: 3px;
 
@@ -315,9 +315,9 @@ hr {
 
   $base: 2;
   $exponent: 1;
-  $limit: 11;
+  $limit: 22;
 
-  // Colors for all 11 states, false = no special color
+  // Colors for all 22 states, false = no special color
   $special-colors: false false, // 2
                    false false, // 4
                    #f78e48 true, // 8
@@ -328,7 +328,18 @@ hr {
                    false true, // 256
                    false true, // 512
                    false true, // 1024
-                   false true; // 2048
+                   false true, // 2048
+				   false true, // 8192
+                   false true, // 16384
+                   false true, // 32768
+                   false true, // 65536
+                   false true, // 131072
+				   false true, // 262144
+                   false true, // 524288
+                   false true, // 1048576
+                   false true, // 2097152
+                   false true, // 4194304
+				   false true; // 4194304
 
   // Build tile colors
   @while $exponent <= $limit {
@@ -371,11 +382,29 @@ hr {
         @include smaller(480px) {
           font-size: 25px;
         }
-      } @else if $power >= 1000 {
+      } @else if $power >= 1000 and $power < 9999 {
         font-size: 35px;
 
         @include smaller(480px) {
+          font-size: 19px;
+        }
+      } @else if $power >= 10000 and $power < 99999 {
+        font-size: 32px;
+
+        @include smaller(480px) {
           font-size: 15px;
+        }
+	  } @else if $power >= 100000 and $power < 999999 {
+        font-size: 28px;
+
+        @include smaller(480px) {
+          font-size: 12px;
+        }
+      }@else if $power >= 1000000 and $power < 9999999 {
+        font-size: 24px;
+
+        @include smaller(480px) {
+          font-size: 10px;
         }
       }
     }
@@ -446,9 +475,9 @@ hr {
 
 @include smaller(480px) {
   // Redefine variables for smaller screens
-  $field-width: 280px;
-  $grid-spacing: 10px;
-  $grid-row-cells: 4;
+  $field-width: 320px;
+  $grid-spacing: 6px;
+  $grid-row-cells: 6;
   $tile-size: ($field-width - $grid-spacing * ($grid-row-cells + 1)) / $grid-row-cells;
   $tile-border-radius: 3px;
 
@@ -462,8 +491,8 @@ hr {
   }
 
   h1.title {
-    font-size: 27px;
-    margin-top: 15px;
+    font-size: 60px;
+    //margin-top: 15px;
   }
 
   .container {
