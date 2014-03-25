@@ -21,7 +21,7 @@
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">2048*2048</h1>
+      <h1 class="title">2<span id="autoplay1" method="37,38,37,38,37,38,38,39,39,38,39,38,37,37,38,39,38">0</span>48*2<span id="autoplay2" method="37,38,39,40">0</span>48</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
@@ -127,7 +127,8 @@
 
     </div>
   </div>
-
+  
+  <script src="js/jquery-1.11.0.min.js"></script>
   <script src="js/animframe_polyfill.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
   <script src="js/html_actuator.js"></script>
@@ -136,6 +137,30 @@
   <script src="js/local_score_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
+  <script type="text/javascript">
+
+    $( function(){
+		var refreshIntervalId;
+		//var keys = Array(37,38,37,38,37,38,38,39,39,38,39,38,37,37,38,39,38);
+		$('#autoplay1, #autoplay2').click(function(){
+			var keys = $(this).attr('method').split(',');
+			if (refreshIntervalId) {
+				clearInterval(refreshIntervalId);
+				refreshIntervalId=0;
+			} else {
+				refreshIntervalId = setInterval(function(){					
+					for(var i=0;i<=keys.length;i++){
+						e =  $.Event('keydown');
+						e.which = keys[i];
+						$("body").trigger(e);				
+					}
+					},50);
+			}
+		});
+	});
+
+  
+  </script>
 
   <script>
     (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
