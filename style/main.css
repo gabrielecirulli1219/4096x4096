@@ -183,10 +183,6 @@ hr {
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
-    .game-container .game-message .score-sharing {
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 10px; }
     .game-container .game-message.game-won {
       background: rgba(237, 194, 46, 0.5);
       color: #f9f6f2; }
@@ -496,36 +492,92 @@ hr {
         font-size: 12px; } }
   .tile.tile-524288 {
     color: #f9f6f2;
-    background: #edc646;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.46296), inset 0 0 0 1px rgba(255, 255, 255, 0.27778);
+    background: #edc74a;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.45823), inset 0 0 0 1px rgba(255, 255, 255, 0.26892);
     font-size: 28px; }
     @media screen and (max-width: 480px) {
       .tile.tile-524288 {
         font-size: 12px; } }
   .tile.tile-1048576 {
     color: #f9f6f2;
-    background: #edc53e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.49383), inset 0 0 0 1px rgba(255, 255, 255, 0.2963);
+    background: #edc646;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 24px; }
     @media screen and (max-width: 480px) {
       .tile.tile-1048576 {
         font-size: 10px; } }
   .tile.tile-2097152 {
     color: #f9f6f2;
-    background: #edc336;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.52469), inset 0 0 0 1px rgba(255, 255, 255, 0.31481);
+    background: #edc53e;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.49383), inset 0 0 0 1px rgba(255, 255, 255, 0.2963);
     font-size: 24px; }
     @media screen and (max-width: 480px) {
       .tile.tile-2097152 {
         font-size: 10px; } }
   .tile.tile-4194304 {
     color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    background: #edc439;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.50505), inset 0 0 0 1px rgba(255, 255, 255, 0.30303);
     font-size: 24px; }
     @media screen and (max-width: 480px) {
       .tile.tile-4194304 {
         font-size: 10px; } }
+  .tile.tile-8388608 {
+    color: #f9f6f2;
+    background: #edc334;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.52509), inset 0 0 0 1px rgba(255, 255, 255, 0.31521);
+    font-size: 24px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-8388608 {
+        font-size: 10px; } }
+  .tile.tile-16777216 {
+    color: #f9f6f2;
+    background: #edc22e;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 20px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-16777216 {
+        font-size: 8px; } }
+  .tile.tile-33554432 {
+    color: #f9f6f2;
+    background: #edc22e;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 20px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-33554432 {
+        font-size: 8px; } }
+  .tile.tile-67108864 {
+    color: #f9f6f2;
+    background: #edc22e;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 20px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-67108864 {
+        font-size: 8px; } }
+  .tile.tile-134217728 {
+    color: #f9f6f2;
+    background: #edc22e;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 18px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-134217728 {
+        font-size: 7px; } }
+  .tile.tile-1073741824 {
+    color: #f9f6f2;
+    background: #edc22e;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 16px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-1073741824 {
+        font-size: 5px; } }
+  .tile.tile-8589934592 {
+    color: #f9f6f2;
+    background: #edc22e;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 14px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-8589934592 {
+        font-size: 5px; } }
 
 @-webkit-keyframes appear {
   0% {
@@ -612,13 +664,6 @@ hr {
 .game-explanation {
   margin-top: 50px; }
 
-.sharing {
-  margin-top: 20px;
-  text-align: center; }
-  .sharing > iframe, .sharing > span, .sharing > form {
-    display: inline-block;
-    vertical-align: middle; }
-
 @media screen and (max-width: 480px) {
   html, body {
     font-size: 15px; }
@@ -690,10 +735,6 @@ hr {
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
-      .game-container .game-message .score-sharing {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 10px; }
       .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
         color: #f9f6f2; }
@@ -888,96 +929,4 @@ hr {
     line-height: 30px !important;
     margin-top: 90px !important; }
   .game-message .lower {
-    margin-top: 30px !important; }
-
-  .sharing > iframe, .sharing > span, .sharing > form {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px; } }
-.pp-donate button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  display: inline-block;
-  background: #8f7a66;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #f9f6f2;
-  height: 40px;
-  line-height: 42px; }
-  .pp-donate button img {
-    vertical-align: -4px;
-    margin-right: 8px; }
-
-.btc-donate {
-  position: relative;
-  margin-left: 10px;
-  display: inline-block;
-  background: #8f7a66;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #f9f6f2;
-  height: 40px;
-  line-height: 42px;
-  cursor: pointer; }
-  .btc-donate img {
-    vertical-align: -4px;
-    margin-right: 8px; }
-  .btc-donate a {
-    color: #f9f6f2;
-    text-decoration: none;
-    font-weight: normal; }
-  .btc-donate .address {
-    cursor: auto;
-    position: absolute;
-    width: 340px;
-    right: 50%;
-    margin-right: -170px;
-    padding-bottom: 7px;
-    top: -30px;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition: 400ms ease;
-    -moz-transition: 400ms ease;
-    -webkit-transition-property: top, opacity;
-    -moz-transition-property: top, opacity; }
-    .btc-donate .address:after {
-      position: absolute;
-      border-top: 10px solid #bbada0;
-      border-right: 7px solid transparent;
-      border-left: 7px solid transparent;
-      content: "";
-      bottom: 0px;
-      left: 50%;
-      margin-left: -7px; }
-    .btc-donate .address code {
-      background-color: #bbada0;
-      padding: 10px 15px;
-      width: 100%;
-      border-radius: 3px;
-      line-height: 1;
-      font-weight: normal;
-      font-size: 15px;
-      font-family: Consolas, "Liberation Mono", Courier, monospace;
-      text-align: center; }
-  .btc-donate:hover .address, .btc-donate .address:hover .address {
-    opacity: 1;
-    top: -45px;
-    pointer-events: auto; }
-  @media screen and (max-width: 480px) {
-    .btc-donate {
-      width: 120px; }
-      .btc-donate .address {
-        margin-right: -150px;
-        width: 300px; }
-        .btc-donate .address code {
-          font-size: 13px; }
-        .btc-donate .address:after {
-          left: 50%;
-          bottom: 2px; } }
+    margin-top: 30px !important; } }
